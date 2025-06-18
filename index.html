@@ -14,97 +14,99 @@
   </head>
 
   <body class="bg-white text-gray-800">
- <header
-  id="navbar"
-  class="fixed top-0 left-0 z-50 w-full bg-white/70 backdrop-blur-md transition duration-300 ease-in-out"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <!-- Logo -->
-      <div class="flex-shrink-0">
-        <img src="./img/manfikar.png" class="h-10 w-auto" alt="Logo" />
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 z-50 w-full bg-white/70 backdrop-blur-md transition duration-300 ease-in-out"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <img src="./img/manfikar.png" class="h-10 w-auto" alt="Logo" />
+          </div>
+
+          <!-- Desktop Menu -->
+          <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+            <a href="#" class="hover:text-blue-600 transition">Home</a>
+            <a href="detail.html" class="hover:text-blue-600 transition"
+              >About</a
+            >
+            <a href="#" class="hover:text-blue-600 transition">Contact</a>
+            <a href="#" class="hover:text-blue-600 transition">Pricing</a>
+            <a href="#" class="hover:text-blue-600 transition">Blog</a>
+          </nav>
+
+          <!-- CTA Button Desktop -->
+          <div class="hidden md:flex">
+            <a
+              href="#"
+              class="group relative inline-flex items-center justify-center px-6 py-2 font-semibold text-white rounded-full shadow-md bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-blue-600 hover:to-blue-200 transition duration-300"
+            >
+              <span
+                class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform scale-0 bg-white opacity-20 group-hover:scale-150 rounded-full"
+              ></span>
+              <span class="relative z-10">Free Consultation</span>
+            </a>
+          </div>
+
+          <!-- Mobile Button -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+              <svg
+                id="menu-open-icon"
+                class="h-7 w-7"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              <svg
+                id="menu-close-icon"
+                class="h-7 w-7 hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
 
-      <!-- Desktop Menu -->
-      <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
-        <a href="#" class="hover:text-blue-600 transition">Home</a>
-        <a href="detail.html" class="hover:text-blue-600 transition">About</a>
-        <a href="#" class="hover:text-blue-600 transition">Contact</a>
-        <a href="#" class="hover:text-blue-600 transition">Pricing</a>
-        <a href="#" class="hover:text-blue-600 transition">Blog</a>
-      </nav>
-
-      <!-- CTA Button Desktop -->
-      <div class="hidden md:flex">
-        <a
-          href="#"
-          class="group relative inline-flex items-center justify-center px-6 py-2 font-semibold text-white rounded-full shadow-md bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-blue-600 hover:to-blue-200 transition duration-300"
-        >
-          <span
-            class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform scale-0 bg-white opacity-20 group-hover:scale-150 rounded-full"
-          ></span>
-          <span class="relative z-10">Free Consultation</span>
-        </a>
-      </div>
-
-      <!-- Mobile Button -->
-      <div class="md:hidden">
-        <button id="menu-toggle" class="text-gray-800 focus:outline-none">
-          <svg
-            id="menu-open-icon"
-            class="h-7 w-7"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-          <svg
-            id="menu-close-icon"
-            class="h-7 w-7 hidden"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            ></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div
-    id="mobile-menu"
-    class="hidden md:hidden bg-white border-t border-gray-200 shadow-md"
-  >
-    <nav class="px-4 py-4 space-y-2 font-medium text-gray-700">
-      <a href="#" class="block hover:text-blue-600">Home</a>
-      <a href="detail.html" class="block hover:text-blue-600">About</a>
-      <a href="#" class="block hover:text-blue-600">Contact</a>
-      <a href="#" class="block hover:text-blue-600">Pricing</a>
-      <a href="#" class="block hover:text-blue-600">Blog</a>
-      <a
-        href="#"
-        class="block text-center mt-4 px-6 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-500 transition"
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200 shadow-md"
       >
-        Free Consultation
-      </a>
-    </nav>
-  </div>
-</header>
+        <nav class="px-4 py-4 space-y-2 font-medium text-gray-700">
+          <a href="#" class="block hover:text-blue-600">Home</a>
+          <a href="detail.html" class="block hover:text-blue-600">About</a>
+          <a href="#" class="block hover:text-blue-600">Contact</a>
+          <a href="#" class="block hover:text-blue-600">Pricing</a>
+          <a href="#" class="block hover:text-blue-600">Blog</a>
+          <a
+            href="#"
+            class="block text-center mt-4 px-6 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-500 transition"
+          >
+            Free Consultation
+          </a>
+        </nav>
+      </div>
+    </header>
     <section class="py-28 overflow-hidden relative">
       <!-- Blob Backgrounds -->
       <div
@@ -1018,29 +1020,29 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-       const navbar = document.getElementById("navbar");
-  const toggleBtn = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const openIcon = document.getElementById("menu-open-icon");
-  const closeIcon = document.getElementById("menu-close-icon");
+      const navbar = document.getElementById("navbar");
+      const toggleBtn = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const openIcon = document.getElementById("menu-open-icon");
+      const closeIcon = document.getElementById("menu-close-icon");
 
-  // Scroll effect
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 10) {
-      navbar.classList.add("bg-white", "shadow-md");
-      navbar.classList.remove("bg-white/70");
-    } else {
-      navbar.classList.remove("bg-white", "shadow-md");
-      navbar.classList.add("bg-white/70");
-    }
-  });
+      // Scroll effect
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+          navbar.classList.add("bg-white", "shadow-md");
+          navbar.classList.remove("bg-white/70");
+        } else {
+          navbar.classList.remove("bg-white", "shadow-md");
+          navbar.classList.add("bg-white/70");
+        }
+      });
 
-  // Toggle menu button
-  toggleBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-    openIcon.classList.toggle("hidden");
-    closeIcon.classList.toggle("hidden");
-  });
+      // Toggle menu button
+      toggleBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        openIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      });
 
       const phrases = [
         "Powerful Web Applications",
