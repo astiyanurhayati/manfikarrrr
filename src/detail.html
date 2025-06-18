@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./output.css" rel="stylesheet" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <header
+      id="navbar"
+      class="fixed top-0 bg-white left-0 z-50 w-full bg-transparent transition duration-300 ease-in-out overflow-x-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+        <div class="flex justify-between h-16 items-center min-w-0">
+          <div class="flex-shrink-0 flex items-center">
+            <img class="h-10 w-auto" src="./img/manfikar.png" alt="Logo" />
+          </div>
+
+          <nav
+            class="hidden md:flex space-x-8 items-center font-medium min-w-0 overflow-hidden"
+          >
+            <a href="index.html" class="hover:text-blue-600 truncate">Home</a>
+            <a href="#" class="hover:text-blue-600 truncate">About</a>
+            <a href="#" class="hover:text-blue-600 truncate">Contact</a>
+            <a href="#" class="hover:text-blue-600 truncate">Pricing</a>
+            <a href="#" class="hover:text-blue-600 truncate">Blog</a>
+          </nav>
+          <div class="hidden md:flex">
+            <a
+              href="#"
+              class="group relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-semibold text-white transition duration-500 ease-in-out rounded-full shadow-md bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-blue-600 hover:to-blue-200 hover:scale-105 focus:outline-none"
+            >
+              <span
+                class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform scale-0 bg-white opacity-20 group-hover:scale-150 rounded-full"
+              ></span>
+              <span class="relative z-10">Free Consultation</span>
+            </a>
+          </div>
+          <div class="md:hidden flex items-center"></div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative isolate overflow-hidden bg-gradient-to-r from-indigo-700 via-purple-700 to-indigo-700 py-24 sm:py-32"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+          <nav class="text-sm text-white/80 flex items-center gap-2">
+            <a href="#" class="hover:underline font-medium text-white">Home</a>
+            <span>›</span>
+            <span class="font-semibold text-white"
+              >Help Desk Service Details</span
+            >
+          </nav>
+        </div>
+
+        <!-- Title & Subtitle -->
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <h1
+            class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white"
+          >
+            Web Design
+          </h1>
+          <a
+            href="#"
+            class="mt-4 sm:mt-0 inline-flex items-center gap-2 rounded-full bg-white text-indigo-700 hover:bg-gray-100 px-6 py-2 text-sm font-semibold shadow-sm transition"
+          >
+            Get a Quote
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Description (optional) -->
+        <p class="mt-6 max-w-2xl text-lg text-white/80">
+          Discover our professional website solutions tailored to your needs —
+          from static pages to dynamic CMS and full-featured business systems.
+        </p>
+      </div>
+    </section>
+ <section class="bg-gradient-to-b from-white to-slate-50 py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto space-y-24">
+    
+    <!-- Paket Pembuatan Website -->
+    <div>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-800 sm:text-5xl">Paket Pembuatan Website</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Kami bantu Anda membangun website profesional, mulai dari kebutuhan sederhana hingga sistem kompleks. Pilih paket yang sesuai!
+        </p>
+      </div>
+
+      <div class="grid gap-12 md:grid-cols-2">
+        <!-- Paket 1 -->
+        <div class="bg-white rounded-3xl p-8 shadow-md hover:shadow-xl transition">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="bg-indigo-100 text-indigo-600 p-3 rounded-xl text-2xl">📄</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800">Paket 1: Website Statis</h3>
+              <p class="text-indigo-600 font-semibold mt-1">Rp 500.000,- (6 halaman)</p>
+            </div>
+          </div>
+          <ul class="text-gray-600 text-sm space-y-2 mb-4">
+            <li>✔ Konten tetap (tidak perlu sering update)</li>
+            <li>✔ Cocok untuk company profile / acara khusus</li>
+            <li>✔ Tampilan responsif & cepat diakses</li>
+          </ul>
+          <p class="text-sm text-gray-500 italic mb-2">Tambahan halaman: Rp 100.000,- / halaman</p>
+          <div class="mt-4">
+            <span class="inline-block bg-indigo-50 text-indigo-600 text-xs font-semibold px-3 py-1 rounded-full">
+              Cocok untuk: Pemula, UMKM, Acara pribadi
+            </span>
+          </div>
+        </div>
+
+        <!-- Paket 2 -->
+        <div class="bg-white rounded-3xl p-8 shadow-md border-2 border-purple-600 relative hover:shadow-xl transition">
+          <div class="absolute top-0 right-0 bg-purple-600 text-white text-xs font-semibold px-4 py-1 rounded-bl-2xl rounded-tr-3xl">
+            Best Seller
+          </div>
+          <div class="flex items-start gap-4 mb-4">
+            <div class="bg-purple-100 text-purple-600 p-3 rounded-xl text-2xl">⚙️</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800">Paket 2: Website CMS</h3>
+              <p class="text-purple-600 font-semibold mt-1">Rp 1.500.000,-</p>
+            </div>
+          </div>
+          <ul class="text-gray-600 text-sm space-y-2 mb-4">
+            <li>✔ Bisa update konten sendiri (tanpa koding)</li>
+            <li>✔ Cocok untuk blog, portal info, toko kecil</li>
+            <li>✔ Admin panel & dokumentasi lengkap</li>
+          </ul>
+          <p class="text-sm text-gray-500 italic mb-2">Maintenance & panduan penggunaan tersedia</p>
+          <div class="mt-4">
+            <span class="inline-block bg-purple-50 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">
+              Cocok untuk: Blogger, UMKM, Travel, Media
+            </span>
+          </div>
+        </div>
+
+        <!-- Paket 3 -->
+        <div class="bg-white rounded-3xl p-8 shadow-md hover:shadow-xl transition">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="bg-green-100 text-green-600 p-3 rounded-xl text-2xl">🧩</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800">Paket 3: Full Script Custom</h3>
+              <p class="text-green-600 font-semibold mt-1">Harga disesuaikan</p>
+            </div>
+          </div>
+          <ul class="text-gray-600 text-sm space-y-2 mb-4">
+            <li>✔ Website sesuai permintaan (fitur khusus)</li>
+            <li>✔ Cocok untuk perusahaan atau proyek khusus</li>
+            <li>✔ Bisa integrasi dengan sistem internal</li>
+          </ul>
+          <p class="text-sm text-gray-500 italic mb-2">Contoh: Web E-learning, HRIS, Inventory, Booking</p>
+          <div class="mt-4">
+            <span class="inline-block bg-green-50 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
+              Cocok untuk: Perusahaan, Instansi, Developer
+            </span>
+          </div>
+        </div>
+
+        <!-- Paket Sistem Internal -->
+        <div class="bg-white rounded-3xl p-8 shadow-md hover:shadow-xl transition">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="bg-blue-100 text-blue-600 p-3 rounded-xl text-2xl">🏢</div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800">Sistem Internal Bisnis</h3>
+              <p class="text-blue-600 font-semibold mt-1">Konsultasi Gratis</p>
+            </div>
+          </div>
+          <ul class="text-gray-600 text-sm space-y-2 mb-4">
+            <li>✔ Aplikasi kasir, keuangan, manajemen data</li>
+            <li>✔ Bisa request laporan, user login, approval</li>
+            <li>✔ Disesuaikan kebutuhan operasional bisnis</li>
+          </ul>
+          <div class="mt-4">
+            <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">
+              Lihat contoh sistem internal →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Manfaat Memiliki Website -->
+    <div>
+      <h2 class="text-3xl font-bold text-indigo-700 mb-6">Manfaat Memiliki Website</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h3 class="font-semibold text-lg mb-2">1. Update Informasi Cepat</h3>
+          <p class="text-gray-600">Memberikan informasi secara real-time dan mudah diakses oleh pengguna.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h3 class="font-semibold text-lg mb-2">2. Koneksi Luas</h3>
+          <p class="text-gray-600">Menghubungkan Anda dengan partner bisnis dari seluruh dunia tanpa batasan jarak.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h3 class="font-semibold text-lg mb-2">3. Branding & Profesionalisme</h3>
+          <p class="text-gray-600">Meningkatkan citra bisnis agar terlihat profesional dan terpercaya.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h3 class="font-semibold text-lg mb-2">4. Hemat Biaya</h3>
+          <p class="text-gray-600">Mengurangi biaya cetak dan promosi konvensional dengan operasional 24/7.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h3 class="font-semibold text-lg mb-2">5. Media Promosi Tanpa Waktu</h3>
+          <p class="text-gray-600">Website berjalan nonstop dan dapat diakses kapan saja oleh pelanggan.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h3 class="font-semibold text-lg mb-2">6. Informasi Produk Lengkap</h3>
+          <p class="text-gray-600">Lebih jelas, lebih lengkap, dan tersaji dalam satu media digital.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ketentuan -->
+    <div>
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">Ketentuan</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Garansi 1 bulan biaya kembali (kecuali hosting & domain, jadi milik Anda sepenuhnya).</li>
+        <li>Custom website akan dikenakan biaya tambahan sesuai permintaan.</li>
+        <li>Diskusikan kebutuhan detail Anda untuk mendapatkan penawaran yang sesuai.</li>
+      </ul>
+    </div>
+
+    <!-- Tahapan Pembuatan Website -->
+    <div>
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">Tahapan Pembuatan Website</h2>
+      <ol class="list-decimal list-inside text-gray-700 space-y-2">
+        <li>Analisa kebutuhan website Anda.</li>
+        <li>Pengumpulan materi dan referensi desain dari Anda.</li>
+        <li>Down Payment minimal 50%.</li>
+        <li>Penyerahan konten & informasi pendukung.</li>
+        <li>Proses pembuatan dan pengujian website.</li>
+        <li>Revisi & persetujuan final sebelum live.</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
+    <section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    
+    <!-- Tahap Pembuatan Website -->
+    <div>
+      <h2 class="text-3xl font-bold text-indigo-700 mb-6">Tahapan Pembuatan Website</h2>
+      <div class="bg-gray-50 rounded-xl shadow p-6">
+        <ol class="list-decimal list-inside space-y-2 text-gray-700">
+          <li>Analisa kebutuhan website.</li>
+          <li>Penyerahan gambaran desain dari pihak pemesan.</li>
+          <li>Down Payment minimal sebesar 50%.</li>
+          <li>Penyerahan isi atau konten website.</li>
+          <li>Proses pengerjaan website.</li>
+          <li>Persetujuan website secara keseluruhan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Peraturan dan Ketentuan Isi Website -->
+    <div>
+      <h2 class="text-3xl font-bold text-indigo-700 mb-6">Peraturan & Ketentuan Isi Website</h2>
+      <div class="bg-gray-50 rounded-xl shadow p-6">
+        <p class="text-gray-700">Website yang dibuat tidak boleh melanggar hukum dan perundang-undangan yang berlaku, termasuk namun tidak terbatas pada konten pornografi, aktivitas ilegal, dan lainnya.</p>
+      </div>
+    </div>
+
+    <!-- Pembayaran -->
+    <div>
+      <h2 class="text-3xl font-bold text-indigo-700 mb-6">Ketentuan Pembayaran</h2>
+      <div class="bg-gray-50 rounded-xl shadow p-6">
+        <ol class="list-decimal list-inside space-y-2 text-gray-700">
+          <li>Pembayaran dilakukan di muka (DP minimal 50%) dan dapat dilunasi setelah website selesai.</li>
+          <li>Masa kontrak berlaku minimal 3 bulan.</li>
+          <li>Setelah kontrak ditandatangani, pelanggan memiliki waktu 1 minggu untuk melakukan review atau revisi.</li>
+          <li>Kami akan memperbaiki setiap kesalahan teknis yang ditemukan selama masa revisi.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-10 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
+        <div class="md:col-span-2">
+          <h2 class="text-white text-2xl font-bold mb-4">Manfikar</h2>
+          <p class="text-sm leading-relaxed">
+            Helping businesses grow with innovative payment solutions and
+            powerful analytics. Let’s build something great together.
+          </p>
+          <div class="flex space-x-4 mt-6">
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Careers</a></li>
+            <li><a href="#" class="hover:text-white">Blog</a></li>
+            <li><a href="#" class="hover:text-white">Press</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Resources</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Docs</a></li>
+            <li><a href="#" class="hover:text-white">API Reference</a></li>
+            <li><a href="#" class="hover:text-white">Pricing</a></li>
+            <li><a href="#" class="hover:text-white">Tutorials</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Help Center</a></li>
+            <li><a href="#" class="hover:text-white">Status</a></li>
+            <li><a href="#" class="hover:text-white">Contact Support</a></li>
+            <li><a href="#" class="hover:text-white">Terms & Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500"
+      >
+        © 2025 Manfikar. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      // window.addEventListener("scroll", () => {
+      //   if (window.scrollY > 20) {
+      //     navbar.classList.add("bg-white", "shadow-md");
+      //     navbar.classList.remove("bg-transparent");
+      //   } else {
+      //     navbar.classList.remove("bg-white", "shadow-md");
+      //     navbar.classList.add("bg-transparent");
+      //   }
+      // });
+
+      const menuBtn = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+
+      //menuBtn.addEventListener("click", () => {
+      //menu.classList.toggle("hidden");
+      //});
+
+      const phrases = [
+        "Powerful Web Applications",
+        "Smart Digital Platforms",
+        "Next-Gen Tech Solutions",
+        "Streamlined Business Tools",
+        "Custom-Built Software",
+      ];
+
+      let index = 0;
+      const textEl = document.getElementById("changing-text");
+
+      setInterval(() => {
+        textEl.classList.remove("opacity-100");
+        textEl.classList.add("opacity-0");
+
+        setTimeout(() => {
+          index = (index + 1) % phrases.length;
+          textEl.textContent = phrases[index];
+          textEl.classList.remove("opacity-0");
+          textEl.classList.add("opacity-100");
+        }, 300);
+      }, 3000); // Ganti setiap 3 detik
+
+      const swiper = new Swiper(".portfolio-swiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+      document.querySelectorAll(".accordion-header").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const body = btn.nextElementSibling;
+          const icon = btn.querySelector(".accordion-icon");
+          const isOpen = body.classList.contains("max-h-[500px]");
+
+          // Close all
+          document.querySelectorAll(".accordion-body").forEach((b) => {
+            b.classList.remove("max-h-[500px]", "opacity-100");
+            b.classList.add("max-h-0", "opacity-0");
+          });
+          document.querySelectorAll(".accordion-icon").forEach((i) => {
+            i.textContent = "+";
+          });
+
+          // Open current
+          if (!isOpen) {
+            body.classList.remove("max-h-0", "opacity-0");
+            body.classList.add("max-h-[500px]", "opacity-100");
+            icon.textContent = "−";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

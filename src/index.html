@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./output.css" rel="stylesheet" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+
+  <body class="bg-white text-gray-800">
+ <header
+  id="navbar"
+  class="fixed top-0 left-0 z-50 w-full bg-white/70 backdrop-blur-md transition duration-300 ease-in-out"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <img src="./img/manfikar.png" class="h-10 w-auto" alt="Logo" />
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+        <a href="#" class="hover:text-blue-600 transition">Home</a>
+        <a href="detail.html" class="hover:text-blue-600 transition">About</a>
+        <a href="#" class="hover:text-blue-600 transition">Contact</a>
+        <a href="#" class="hover:text-blue-600 transition">Pricing</a>
+        <a href="#" class="hover:text-blue-600 transition">Blog</a>
+      </nav>
+
+      <!-- CTA Button Desktop -->
+      <div class="hidden md:flex">
+        <a
+          href="#"
+          class="group relative inline-flex items-center justify-center px-6 py-2 font-semibold text-white rounded-full shadow-md bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-blue-600 hover:to-blue-200 transition duration-300"
+        >
+          <span
+            class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform scale-0 bg-white opacity-20 group-hover:scale-150 rounded-full"
+          ></span>
+          <span class="relative z-10">Free Consultation</span>
+        </a>
+      </div>
+
+      <!-- Mobile Button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+          <svg
+            id="menu-open-icon"
+            class="h-7 w-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+          <svg
+            id="menu-close-icon"
+            class="h-7 w-7 hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-white border-t border-gray-200 shadow-md"
+  >
+    <nav class="px-4 py-4 space-y-2 font-medium text-gray-700">
+      <a href="#" class="block hover:text-blue-600">Home</a>
+      <a href="detail.html" class="block hover:text-blue-600">About</a>
+      <a href="#" class="block hover:text-blue-600">Contact</a>
+      <a href="#" class="block hover:text-blue-600">Pricing</a>
+      <a href="#" class="block hover:text-blue-600">Blog</a>
+      <a
+        href="#"
+        class="block text-center mt-4 px-6 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-500 transition"
+      >
+        Free Consultation
+      </a>
+    </nav>
+  </div>
+</header>
+    <section class="py-28 overflow-hidden relative">
+      <!-- Blob Backgrounds -->
+      <div
+        class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-[30rem] h-[30rem] bg-gradient-to-tr from-purple-100 to-pink-300 opacity-50 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"
+      ></div>
+
+      <div
+        class="absolute top-20 right-[-10rem] w-[30rem] h-[30rem] bg-gradient-to-tr from-blue-300 to-purple-400 opacity-50 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"
+      ></div>
+
+      <div
+        class="absolute top-0 left-[-10rem] w-[30rem] h-[30rem] bg-gradient-to-tr from-green-300 to-blue-100 opacity-50 rounded-full mix-blend-multiply filter blur-3xl animate-blob"
+      ></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-7xl pt-12 mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-7xl font-bold text-gray-900 leading-tight">
+          <span
+            id="changing-text"
+            class="transition-all duration-700 ease-in-out inline-block"
+          >
+            Digital Solutions </span
+          ><br />
+          <span class="text-indigo-700">
+            For Enterprise <em class="italic font-medium">Growth</em>
+          </span>
+        </h1>
+
+        <p class="mt-6 text-gray-700 text-base md:text-xl max-w-2xl mx-auto">
+          We are ready to provide systems and solutions for your business
+        </p>
+
+        <div class="mt-8">
+          <a
+            href="#"
+            class="group relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-semibold text-white transition duration-500 ease-in-out rounded-full shadow-md bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-blue-600 hover:to-blue-200 hover:scale-105 focus:outline-none"
+          >
+            <span
+              class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform scale-0 bg-white opacity-20 group-hover:scale-150 rounded-full"
+            ></span>
+            <span class="relative z-10">Get Started</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 relative overflow-hidden">
+      <div
+        class="px-4 flex flex-col md:flex-row items-center gap-5 px-12 relative"
+      >
+        <div class="flex-1 relative">
+          <img
+            src="./img/a4.png"
+            alt="Floating a4"
+            class="absolute a1 animate-float delay-400 z-20"
+          />
+          <img
+            src="./img/a5.png"
+            alt="Floating a5"
+            class="absolute a2 animate-float delay-600 z-20"
+          />
+          <img
+            src="./img/a2.png"
+            alt="Floating a2"
+            class="absolute a3 animate-float delay-0 z-20"
+          />
+          <img
+            src="./img/a3.png"
+            alt="Floating a3"
+            class="absolute a4 animate-float delay-200 z-20"
+          />
+          <img src="./img/a1.png" alt="About Us" class="rounded-lg relative" />
+        </div>
+        <div class="flex-1 relative z-20">
+          <div class="mb-4">
+            <span
+              class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-medium inline-block transition-transform duration-500 hover:rotate-12 hover:scale-105"
+            >
+              About Us
+            </span>
+          </div>
+
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            <strong>Manfikar.com (CV Manfikar Group)</strong> is a provider of
+            website and web applications advertising services (company profile,
+            online stores and website and desktop-based application systems).
+            Established since <strong>November 18, 2013</strong>, committed to
+            serving and realizing your needs for online services based on full
+            responsibility...
+          </p>
+
+          <a
+            href="#"
+            class="group relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-semibold text-white transition duration-500 ease-in-out rounded-full shadow-md bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-blue-600 hover:to-blue-200 hover:scale-105 focus:outline-none"
+          >
+            <span
+              class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform scale-0 bg-white opacity-20 group-hover:scale-150 rounded-full"
+            ></span>
+            <span class="relative z-10">See Detail</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-[50px] font-bold text-center text-gray-800 mb-12">
+          Explore Our Data Services
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="group relative bg-white border border-gray-200 rounded-3xl p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:border-indigo-500 hover:scale-[1.03] hover:-translate-y-2 overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-3xl bg-gradient-to-br from-green-100 via-transparent to-indigo-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 blur-sm"
+            ></div>
+            <div
+              class="relative z-10 bg-indigo-100 text-indigo-600 p-3 rounded-xl w-fit mb-4 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110"
+            >
+              <img src="./img/e1.png" alt="Hosting Icon" class="w-8 h-8" />
+            </div>
+            <h3
+              class="relative z-10 font-semibold text-xl mb-2 text-gray-800 transition-colors duration-300 group-hover:text-indigo-700"
+            >
+              Hosting and Domain Service
+            </h3>
+            <p class="relative z-10 text-sm text-gray-600 mb-4 leading-relaxed">
+              Kami siap membantu proses penyediaan website di internet secara
+              optimal, efektif & efisien
+            </p>
+            <a
+              href="#"
+              class="relative z-10 text-indigo-600 text-xl font-semibold inline-flex items-center transition-all duration-300 group-hover:underline group-hover:translate-x-1"
+            >
+              &#8594;
+            </a>
+          </div>
+          <div
+            class="group relative bg-white border border-gray-200 rounded-3xl p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:border-indigo-500 hover:scale-[1.03] hover:-translate-y-2 overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-3xl bg-gradient-to-br from-green-100 via-transparent to-indigo-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 blur-sm"
+            ></div>
+            <div
+              class="relative z-10 bg-indigo-100 text-indigo-600 p-3 rounded-xl w-fit mb-4 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110"
+            >
+              <img src="./img/e2.png" alt="Hosting Icon" class="w-8 h-8" />
+            </div>
+            <h3
+              class="relative z-10 font-semibold text-xl mb-2 text-gray-800 transition-colors duration-300 group-hover:text-indigo-700"
+            >
+              Network and System Administration
+            </h3>
+            <p class="relative z-10 text-sm text-gray-600 mb-4 leading-relaxed">
+              Kami siap membantu proses penyediaan website di internet secara
+              optimal, efektif & efisien
+            </p>
+            <a
+              href="#"
+              class="relative z-10 text-indigo-600 text-xl font-semibold inline-flex items-center transition-all duration-300 group-hover:underline group-hover:translate-x-1"
+            >
+              &#8594;
+            </a>
+          </div>
+          <div
+            class="group relative bg-white border border-gray-200 rounded-3xl p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:border-indigo-500 hover:scale-[1.03] hover:-translate-y-2 overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-3xl bg-gradient-to-br from-green-100 via-transparent to-indigo-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 blur-sm"
+            ></div>
+            <div
+              class="relative z-10 bg-indigo-100 text-indigo-600 p-3 rounded-xl w-fit mb-4 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110"
+            >
+              <img src="./img/e3.png" alt="Hosting Icon" class="w-8 h-8" />
+            </div>
+            <h3
+              class="relative z-10 font-semibold text-xl mb-2 text-gray-800 transition-colors duration-300 group-hover:text-indigo-700"
+            >
+              Web Development
+            </h3>
+            <p class="relative z-10 text-sm text-gray-600 mb-4 leading-relaxed">
+              Kami siap membantu proses penyediaan website di internet secara
+              optimal, efektif & efisien
+            </p>
+            <a
+              href="#"
+              class="relative z-10 text-indigo-600 text-xl font-semibold inline-flex items-center transition-all duration-300 group-hover:underline group-hover:translate-x-1"
+            >
+              &#8594;
+            </a>
+          </div>
+          <div
+            class="group relative bg-white border border-gray-200 rounded-3xl p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:border-indigo-500 hover:scale-[1.03] hover:-translate-y-2 overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-3xl bg-gradient-to-br from-green-100 via-transparent to-indigo-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 blur-sm"
+            ></div>
+            <div
+              class="relative z-10 bg-indigo-100 text-indigo-600 p-3 rounded-xl w-fit mb-4 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110"
+            >
+              <img src="./img/e4.png" alt="Hosting Icon" class="w-8 h-8" />
+            </div>
+            <h3
+              class="relative z-10 font-semibold text-xl mb-2 text-gray-800 transition-colors duration-300 group-hover:text-indigo-700"
+            >
+              Maintenance and Repair
+            </h3>
+            <p class="relative z-10 text-sm text-gray-600 mb-4 leading-relaxed">
+              Kami siap membantu proses penyediaan website di internet secara
+              optimal, efektif & efisien
+            </p>
+            <a
+              href="#"
+              class="relative z-10 text-indigo-600 text-xl font-semibold inline-flex items-center transition-all duration-300 group-hover:underline group-hover:translate-x-1"
+            >
+              &#8594;
+            </a>
+          </div>
+          <div
+            class="group relative bg-white border border-gray-200 rounded-3xl p-6 shadow-md transition-all duration-500 hover:shadow-xl hover:border-indigo-500 hover:scale-[1.03] hover:-translate-y-2 overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-3xl bg-gradient-to-br from-green-100 via-transparent to-indigo-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 blur-sm"
+            ></div>
+            <div
+              class="relative z-10 bg-indigo-100 text-indigo-600 p-3 rounded-xl w-fit mb-4 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110"
+            >
+              <img src="./img/e5.png" alt="Hosting Icon" class="w-8 h-8" />
+            </div>
+            <h3
+              class="relative z-10 font-semibold text-xl mb-2 text-gray-800 transition-colors duration-300 group-hover:text-indigo-700"
+            >
+              Digital Marketing
+            </h3>
+            <p class="relative z-10 text-sm text-gray-600 mb-4 leading-relaxed">
+              Kami siap membantu proses penyediaan website di internet secara
+              optimal, efektif & efisien
+            </p>
+            <a
+              href="#"
+              class="relative z-10 text-indigo-600 text-xl font-semibold inline-flex items-center transition-all duration-300 group-hover:underline group-hover:translate-x-1"
+            >
+              &#8594;
+            </a>
+          </div>
+          <div
+            class="row-span-2 self-start rounded-xl p-6 text-white bg-gradient-to-br from-purple-700 via-indigo-600 to-cyan-500 flex flex-col justify-between min-h-[460px]"
+          >
+            <div>
+              <h3 class="text-lg font-bold mb-2">
+                Anda lebih familiar dengan CMS?
+              </h3>
+              <p class="text-sm mb-4">
+                Kami siap membimbing dan membantu anda untuk memiliki website
+                yang lebih istimewa dan tepat sasaran
+              </p>
+            </div>
+            <img src="./img/e6.png" alt="CMS Preview" class="rounded-lg mb-4" />
+            <p class="text-sm">
+              Menggunakan CMS Bisa lebih terjangkau dalam biaya
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-[#F4F8FD]">
+      <div class="">
+        <h2 class="text-[50px] ml-20 font-bold text-left text-gray-800 mb-12">
+          Our Clients
+        </h2>
+
+        <!-- Baris 1 -->
+        <div class="relative overflow-x-hidden w-full">
+          <div class="client-track animate-left">
+            <!-- Card 1 - 8 + duplikat -->
+            <!-- Ganti gambar sesuai kebutuhan -->
+            <div class="client-card shadow-md">
+              <img src="./img/c1.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c2.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c3.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c4.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c5.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c6.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c7.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c8.png" alt="" />
+            </div>
+            <!-- Duplikat -->
+            <div class="client-card shadow-md">
+              <img src="./img/c1.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c2.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c3.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c4.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c5.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c6.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c7.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c8.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Baris 2 -->
+        <div class="relative overflow-x-hidden">
+          <div class="client-track animate-right">
+            <div class="client-card shadow-md">
+              <img src="./img/c8.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c7.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c6.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c5.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c4.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c3.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c2.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c1.png" alt="" />
+            </div>
+            <!-- Duplikat -->
+            <div class="client-card shadow-md">
+              <img src="./img/c8.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c7.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c6.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c5.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c4.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c3.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c2.png" alt="" />
+            </div>
+            <div class="client-card shadow-md">
+              <img src="./img/c1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-gradient-to-b from-white to-slate-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Heading -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 leading-snug">
+            <span class="text-primary">Portfolio Showcase</span>
+          </h2>
+          <p class="mt-4 text-gray-600 text-lg">
+            Karya-karya terbaik yang mencerminkan kualitas dan kreativitas kami.
+          </p>
+        </div>
+
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white shadow-xl rounded-2xl p-8"
+              >
+                <img
+                  src="./img/p1.png"
+                  alt="Project 1"
+                  class="w-full h-64 object-cover rounded-xl"
+                />
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-800 mb-3">
+                    Website UMKM
+                  </h3>
+                  <p class="text-gray-600 text-base mb-4">
+                    Website modern untuk pelaku UMKM dengan fitur katalog, form
+                    pemesanan, dan desain responsif.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-block mt-2 px-6 py-2 bg-primary text-white rounded-full hover:bg-primary/90 transition"
+                  >
+                    Lihat Detail
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white shadow-xl rounded-2xl p-8"
+              >
+                <img
+                  src="./img/p1.png"
+                  alt="Project 2"
+                  class="w-full h-64 object-cover rounded-xl"
+                />
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-800 mb-3">
+                    Aplikasi Artikel
+                  </h3>
+                  <p class="text-gray-600 text-base mb-4">
+                    Aplikasi artikel berbasis web dengan sistem manajemen konten
+                    dan SEO optimization.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-block mt-2 px-6 py-2 bg-primary text-white rounded-full hover:bg-primary/90 transition"
+                  >
+                    Lihat Detail
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tambah slide lain di sini -->
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination mt-10"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-[3rem] font-bold text-gray-800 mb-12">
+          Price Forecasts
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div
+            class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#4F46E5] to-[#9333EA] text-white shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-purple-500/30"
+          >
+            <div
+              class="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:blur-xl transition duration-700"
+            ></div>
+            <div class="p-6 relative z-10">
+              <!-- Header -->
+              <div class="flex items-center justify-between mb-5">
+                <h3 class="text-2xl font-extrabold tracking-tight leading-snug">
+                  Website Development
+                </h3>
+                <img
+                  src="./img/e1.png"
+                  alt="icon"
+                  class="w-9 h-9 animate-float group-hover:rotate-[15deg] transition-all duration-700"
+                />
+              </div>
+
+              <!-- List -->
+              <ul
+                class="text-[15.5px] font-medium leading-relaxed space-y-2 mb-8"
+              >
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 1 Website Statis
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 2 Website CMS
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 3 Website Full Script
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> System Jasa Pembuatan Internal
+                </li>
+              </ul>
+
+              <!-- Button -->
+              <div class="text-center">
+                <button
+                  class="px-6 py-2 rounded-full bg-white/90 text-purple-700 font-semibold shadow-lg hover:bg-white transition-all duration-300"
+                >
+                  See Detail
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#4F46E5] to-[#9333EA] text-white shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-purple-500/30"
+          >
+            <div
+              class="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:blur-xl transition duration-700"
+            ></div>
+
+            <div class="p-6 relative z-10">
+              <!-- Header -->
+              <div class="flex items-center justify-between mb-5">
+                <h3 class="text-2xl font-extrabold tracking-tight leading-snug">
+                  Website Improvement
+                </h3>
+                <img
+                  src="./img/e1.png"
+                  alt="icon"
+                  class="w-9 h-9 animate-float group-hover:rotate-[15deg] transition-all duration-700"
+                />
+              </div>
+
+              <!-- List -->
+              <ul
+                class="text-[15.5px] font-medium leading-relaxed space-y-2 mb-8"
+              >
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 1 Website Statis
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 2 Website CMS
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 3 Website Full Script
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> System Jasa Pembuatan Internal
+                </li>
+              </ul>
+
+              <!-- Button -->
+              <div class="text-center">
+                <button
+                  class="px-6 py-2 rounded-full bg-white/90 text-purple-700 font-semibold shadow-lg hover:bg-white transition-all duration-300"
+                >
+                  See Detail
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#4F46E5] to-[#9333EA] text-white shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-purple-500/30"
+          >
+            <div
+              class="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:blur-xl transition duration-700"
+            ></div>
+
+            <div class="p-6 relative z-10">
+              <!-- Header -->
+              <div class="flex items-center justify-between mb-5">
+                <h3 class="text-2xl font-extrabold tracking-tight leading-snug">
+                  Place Website Advertisement
+                </h3>
+                <img
+                  src="./img/e1.png"
+                  alt="icon"
+                  class="w-9 h-9 animate-float group-hover:rotate-[15deg] transition-all duration-700"
+                />
+              </div>
+
+              <!-- List -->
+              <ul
+                class="text-[15.5px] font-medium leading-relaxed space-y-2 mb-8"
+              >
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 1 Website Statis
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 2 Website CMS
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 3 Website Full Script
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> System Jasa Pembuatan Internal
+                </li>
+              </ul>
+
+              <!-- Button -->
+              <div class="text-center">
+                <button
+                  class="px-6 py-2 rounded-full bg-white/90 text-purple-700 font-semibold shadow-lg hover:bg-white transition-all duration-300"
+                >
+                  See Detail
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#4F46E5] to-[#9333EA] text-white shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-purple-500/30"
+          >
+            <div
+              class="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:blur-xl transition duration-700"
+            ></div>
+
+            <div class="p-6 relative z-10">
+              <!-- Header -->
+              <div class="flex items-center justify-between mb-5">
+                <h3 class="text-2xl font-extrabold tracking-tight leading-snug">
+                  Google Workspace
+                </h3>
+                <img
+                  src="./img/e1.png"
+                  alt="icon"
+                  class="w-9 h-9 animate-float group-hover:rotate-[15deg] transition-all duration-700"
+                />
+              </div>
+
+              <!-- List -->
+              <ul
+                class="text-[15.5px] font-medium leading-relaxed space-y-2 mb-8"
+              >
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 1 Website Statis
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 2 Website CMS
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> Paket 3 Website Full Script
+                </li>
+                <li class="flex items-start gap-2">
+                  <span>•</span> System Jasa Pembuatan Internal
+                </li>
+              </ul>
+
+              <!-- Button -->
+              <div class="text-center">
+                <button
+                  class="px-6 py-2 rounded-full bg-white/90 text-purple-700 font-semibold shadow-lg hover:bg-white transition-all duration-300"
+                >
+                  See Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-10 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Jasa Perbaikan dan Pembuatan Aplikasi Berbasis Web
+          </h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-4">
+            Kami menawarkan solusi perbaikan dan pengembangan aplikasi web untuk
+            menunjang bisnis Anda. Setiap perbaikan kami dilengkapi dengan
+            garansi 1–3 bulan untuk error yang sama.
+          </p>
+          <ul class="space-y-3 text-gray-700 text-base">
+            <li class="flex items-start gap-2">
+              <span class="text-green-500 mt-1">✓</span>
+              Sistem fleksibel dan harga bersaing dengan garansi perbaikan.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-500 mt-1">✓</span>
+              Dikerjakan ulang tanpa biaya jika masih ada error yang sama.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-500 mt-1">✓</span>
+              Bisa dibuat ramah SEO untuk tampil di Google tanpa Ads.
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="group relative mt-4 inline-flex items-center justify-center px-6 py-2 overflow-hidden font-semibold text-white transition duration-500 ease-in-out rounded-full shadow-md bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-blue-600 hover:to-blue-200 hover:scale-105 focus:outline-none"
+          >
+            <span
+              class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform scale-0 bg-white opacity-20 group-hover:scale-150 rounded-full"
+            ></span>
+            <span class="relative z-10">Contact Now</span>
+          </a>
+        </div>
+
+        <!-- Illustration -->
+        <div class="relative w-full max-w-md mx-auto">
+          <!-- Gambar utama -->
+          <img
+            src="./img/i.png"
+            alt="Web Service Illustration"
+            class="w-full z-10 relative"
+          />
+
+          <!-- Gambar ngambang -->
+          <img
+            src="./img/i2.png"
+            alt=""
+            class="absolute top-[100px] right-[30px] w-20 floating z-0 opacity-90"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full px-6 py-10 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left Side -->
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left space-y-6"
+        >
+          <span
+            class="bg-indigo-100 text-indigo-600 px-4 py-1 rounded-full text-sm font-medium animate-bounce"
+          >
+            Support
+          </span>
+          <h2
+            class="text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight"
+          >
+            Frequently<br />Asked Questions
+          </h2>
+          <div class="flex items-end gap-5">
+            <img
+              src="./img/f1.png"
+              alt="FAQ Illustration"
+              class="w-[360px] auto object-contain"
+            />
+            <a
+              href="#"
+              class="group relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-semibold text-white transition duration-500 ease-in-out rounded-full shadow-md bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-blue-600 hover:to-blue-200 hover:scale-105 focus:outline-none"
+            >
+              <span
+                class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform scale-0 bg-white opacity-20 group-hover:scale-150 rounded-full"
+              ></span>
+              <span class="relative z-10">Get In Touch</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side / Accordion -->
+        <div class="space-y-6">
+          <!-- FAQ Item -->
+          <div
+            class="accordion-item rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+          >
+            <button
+              class="accordion-header w-full flex justify-between items-center px-6 py-5 text-left text-indigo-700 font-semibold text-xl hover:text-indigo-900 transition-colors duration-300"
+            >
+              Why should I choose Manfikar?
+              <span
+                class="accordion-icon text-3xl font-bold transition-transform duration-300"
+                >−</span
+              >
+            </button>
+            <div
+              class="accordion-body px-6 pb-6 pt-2 text-gray-600 text-base leading-relaxed max-h-[500px] opacity-100 overflow-hidden transition-all duration-500 ease-in-out"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              eget urna arcu. Proin sollicitudin orci eu ante feugiat mattis.
+              Vestibulum vel libero vel felis condimentum congue et vel magna.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="accordion-item rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+          >
+            <button
+              class="accordion-header w-full flex justify-between items-center px-6 py-5 text-left text-indigo-700 font-semibold text-xl hover:text-indigo-900 transition-colors duration-300"
+            >
+              What services are included?
+              <span
+                class="accordion-icon text-3xl font-bold transition-transform duration-300"
+                >+</span
+              >
+            </button>
+            <div
+              class="accordion-body px-6 pb-6 pt-2 text-gray-600 text-base leading-relaxed max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              luctus semper est nec pulvinar.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="accordion-item rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+          >
+            <button
+              class="accordion-header w-full flex justify-between items-center px-6 py-5 text-left text-indigo-700 font-semibold text-xl hover:text-indigo-900 transition-colors duration-300"
+            >
+              How long does it take?
+              <span
+                class="accordion-icon text-3xl font-bold transition-transform duration-300"
+                >+</span
+              >
+            </button>
+            <div
+              class="accordion-body px-6 pb-6 pt-2 text-gray-600 text-base leading-relaxed max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out"
+            >
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="w-full px-6 py-16">
+      <div
+        class="max-w-4xl mx-auto bg-gradient-to-r from-blue-700 to-red-600 text-white rounded-2xl text-center px-8 py-12 shadow-lg"
+      >
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Try our service now!
+        </h2>
+        <p class="text-lg md:text-base mb-6">
+          Everything you need to accept card payments and grow your business<br />
+          anywhere on the planet.
+        </p>
+        <button
+          class="bg-green-400 text-white font-semibold px-6 py-2 rounded-full hover:bg-green-500 transition"
+        >
+          Get Started
+        </button>
+      </div>
+    </section> -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-10 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
+        <div class="md:col-span-2">
+          <h2 class="text-white text-2xl font-bold mb-4">Manfikar</h2>
+          <p class="text-sm leading-relaxed">
+            Helping businesses grow with innovative payment solutions and
+            powerful analytics. Let’s build something great together.
+          </p>
+          <div class="flex space-x-4 mt-6">
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Careers</a></li>
+            <li><a href="#" class="hover:text-white">Blog</a></li>
+            <li><a href="#" class="hover:text-white">Press</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Resources</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Docs</a></li>
+            <li><a href="#" class="hover:text-white">API Reference</a></li>
+            <li><a href="#" class="hover:text-white">Pricing</a></li>
+            <li><a href="#" class="hover:text-white">Tutorials</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="text-white font-semibold mb-4">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-white">Help Center</a></li>
+            <li><a href="#" class="hover:text-white">Status</a></li>
+            <li><a href="#" class="hover:text-white">Contact Support</a></li>
+            <li><a href="#" class="hover:text-white">Terms & Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500"
+      >
+        © 2025 Manfikar. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+       const navbar = document.getElementById("navbar");
+  const toggleBtn = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const openIcon = document.getElementById("menu-open-icon");
+  const closeIcon = document.getElementById("menu-close-icon");
+
+  // Scroll effect
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add("bg-white", "shadow-md");
+      navbar.classList.remove("bg-white/70");
+    } else {
+      navbar.classList.remove("bg-white", "shadow-md");
+      navbar.classList.add("bg-white/70");
+    }
+  });
+
+  // Toggle menu button
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    openIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+  });
+
+      const phrases = [
+        "Powerful Web Applications",
+        "Smart Digital Platforms",
+        "Custom-Built Software",
+      ];
+
+      let index = 0;
+      const textEl = document.getElementById("changing-text");
+
+      setInterval(() => {
+        textEl.classList.remove("opacity-100");
+        textEl.classList.add("opacity-0");
+
+        setTimeout(() => {
+          index = (index + 1) % phrases.length;
+          textEl.textContent = phrases[index];
+          textEl.classList.remove("opacity-0");
+          textEl.classList.add("opacity-100");
+        }, 300);
+      }, 3000); // Ganti setiap 3 detik
+
+      document.querySelectorAll(".accordion-header").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const body = btn.nextElementSibling;
+          const icon = btn.querySelector(".accordion-icon");
+          const isOpen = body.classList.contains("max-h-[500px]");
+
+          // Close all
+          document.querySelectorAll(".accordion-body").forEach((b) => {
+            b.classList.remove("max-h-[500px]", "opacity-100");
+            b.classList.add("max-h-0", "opacity-0");
+          });
+          document.querySelectorAll(".accordion-icon").forEach((i) => {
+            i.textContent = "+";
+          });
+
+          // Open current
+          if (!isOpen) {
+            body.classList.remove("max-h-0", "opacity-0");
+            body.classList.add("max-h-[500px]", "opacity-100");
+            icon.textContent = "−";
+          }
+        });
+      });
+
+      const swiper = new Swiper(".portfolio-swiper", {
+        loop: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    </script>
+  </body>
+</html>
